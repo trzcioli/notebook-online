@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1=title
+
+  form(method='POST' action='/notebook/create')
+    div.form-group
+      label(for='title') title:
+        textarea.form-control(name="title", rows="1")
+
+    div.form-group
+      label(for='content') content:
+        textarea.form-control(name="content", rows="8")
+    
+    button.btn.btn-primary(type='submit') Create
+
+  if errors 
+    ul
+      for error in errors
+        li!= error.msg

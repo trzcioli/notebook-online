@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+    each val in notebook_list
+      li 
+        a(href=val.url) #{val.title} 
+        p= moment(val.updatedAt).format("MMMM Do YYYY, h:mm:ss a")
+
+    else
+      li There are no book copies in this library.

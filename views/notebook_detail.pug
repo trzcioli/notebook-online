@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1=Edit
+
+  form(method='POST' action='/notebook/' + notebook._id + '/update')
+    div.form-group
+      label(for='title') title:
+        textarea.form-control(name="title", rows="1") #{notebook.title}
+
+    div.form-group
+      label(for='content') content:
+        textarea.form-control(name="content", rows="8") #{notebook.content}
+    
+    button.btn.btn-primary(type='submit') Confirm
+
+  form(method='POST' action='/notebook/' + notebook._id + '/delete')
+    button.btn.btn-warning(type='submit') Delete
+
+  if errors 
+    ul
+      for error in errors
+        li!= error.msg
