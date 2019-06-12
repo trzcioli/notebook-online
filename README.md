@@ -1,11 +1,16 @@
 # notebook-online
 Web application to create quick notes based on express web framework and MongoDB database.
 
-Based on the tutorial: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs?fbclid=IwAR11VKfcLE4Hg5ZgVXwlN2z7HSf41ntQ9uZWntqBxXWrSgJ77zer5ajbZL0) 
+***
 
+**Based on** the tutorial: [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs?fbclid=IwAR11VKfcLE4Hg5ZgVXwlN2z7HSf41ntQ9uZWntqBxXWrSgJ77zer5ajbZL0) 
+
+***
 
 You will need modules:    
 express, express-session, pug, mongoose, body-parser, cookie-parser, morgan, moment, bcrypt    
+
+***
 
 To install nodejs:
 ```console
